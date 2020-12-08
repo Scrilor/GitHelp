@@ -45,15 +45,12 @@ nav li :hover{
 
 /*Header*/
 .page-header{
-	position: -webkit-sticky;
 	min-width: 100%;
 	height: 500px;
-	text-align: center;
-	line-height: 500px;
 	color: #8B6D4A;
 	font-family: 'roboto';
 	font-style: italic;
-	font-size: 250%;
+	font-size:400%;
 }
 
 
@@ -219,4 +216,7 @@ h2{
 }
 #sc24{
 	margin-left: 5%;
+}
+#ifeelinsane{
+	margin-top: 5%;
 }
