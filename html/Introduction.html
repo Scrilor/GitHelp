@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<Title>GitHelp !</Title>
+		<meta charset="utf-8"/>
+		<link href="../css/reset.css" rel="stylesheet">
+		<link href="../css/style.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	</head>
+
+	<header>
+		<nav>
+			<ul>
+				<li><a href="main.html">Acceuil</a></li><!--
+				--><li><a href="Installation.html">Installation</a></li><!--
+				--><li><a href="Introduction.html">Introduction à Git</a></li><!--
+				--><li><a href="Lexique.html">Lexique</a></li><!--
+				--><li><a href="vscode.html">Pour VScode</a></li><!--
+				--><li><a href="Elus.html">Les Elus</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="page-header">
+		<a href="http://www.cstb.fr/fr" target="_blank">
+			<img id="cstb" src="../logo/CSTB_logo.png" alt="CSTB">
+		</a>
+		<a href="https://scm.cstb.fr" target="_blank">
+			<img id="gitlab" src="../logo/GitLab_logo.png" alt="GitLab" style="Width:10%">
+		</a>
+		<h1>GitHelp !</h1>
+	</div>
+	
+	<main>
+		<div>
+			<h2>Introduction à Git</h2>
+			<p class="simple-text">Cette courte introduction à pour but de vous faire expérimenter les principaux fonctionnement de GitLab par l'intermédiare de ce site Web. En suivant les indications suivantes vous allez modifiez la page Elus du site et ce pour chacun des collaborateurs.<br/></p>
+			<h2><br/>En ligne de commande via Git SCM</h2>
+			<p class="simple-text"> - Commencez par initier un dossier comme étant un repository Git local :<br/><br/><b><i>git init</b></i></p>
+			<p class="simple-text"> - Téléchargez les fichiers sources:<br/><br/><b><i>git clone URL</b></i></p>
+			<p class="simple-text"> - Configurez votre identité:<br/><br/><b><i>git config --global user.name "NOM Prénom"<br/>git config --global user.email "prenom.nom@cstb.fr"</b></i></p>
+			<p class="simple-text"> - Regardez quels fichiers sont à ajouter à l'index et ajoutez les :<br/><br/><b><i>git status<br/>git add Dossiers/fichiers</b></i></p>
+			<p class="simple-text"> - Créez une nouvelle branche à votre effigie :<br/><br/><b><i>git branch Nomdelabranche</b></i></p>
+			<p class="simple-text"> - Changez de branche puis effectuer les modifications que vous souhaitez sur la page Les Elus :<br/><br/><b><i>git checkout Nom de la branche</b></i></p>
+			<p class="simple-text"> - Push la nouvelle branche modifié :<br/><br/><b><i>git push --set-upstream Nomdelabranche origin/Nomdelabranche</b></i></p>
+			<p class="simple-text"> - Changez de branche Votre branche -> Branche principale (master) :<br/><br/><b><i>git checkout master</b></i></p>
+			<p class="simple-text"> - Merge votre branche à la branche principale :<br/><br/><b><i>git merge Nomdelabranche</b></i></p>
+			<p class="simple-text"> - Pushez à nouveau mais cette fois-ci sur la branche principale :<br/><br/><b><i>git push</b></i></p>
+			<h2><br/>Avec l'interface graphique Sourcetree</h2>
+			<p class="simple-text"><br/> -  Clonez le Git en question.</p>
+			<img id="sc9" src="../screenshot/sc9.png">
+			<p class="simple-text"><br/> - En récûpérant la branche Dev ce qui vous permettra de travailler dessus.</p>
+			<img id="sc10" src="../screenshot/sc10.png">
+			<p class="simple-text">P.S. : Dans un cas concret Dev est utilisé pour travailler de son côté puisque la branche master à plus vocation à être publique rendant la dernière version disponible pour les utilisateurs.</p>
+			<p class="simple-text"><br/> - Avant de travailler toujours faire un pull de la branche pour éviter toutes erreurs superflues. Pour cela cliquez sur Récupérer.</p>
+			<img id="sc11" src="../screenshot/sc11.png">
+			<p class="simple-text"><br/> - Réalisez les modifications souhaitées avec votre éditeur de texte.</p>
+			<img id="sc12" src="../screenshot/sc12.png">
+			<p class="simple-text"><br/> - Indexez puis Commitez vos changement dans Sourcetree comme-ceci.En vous dirigeant dans "History".</p>
+			<img id="sc13" src="../screenshot/sc13.png"><br/>
+			<img id="sc14" src="../screenshot/sc14.png">
+			<p class="simple-text"><br/> - Pushez vos modifications avec l'icone push "Envoyer" (Si une erreur survient ouvrez alors la ligne de commande et tapez git push --force).</p>
+			<img id="sc15" src="../screenshot/sc15.png">
+			<p class="simple-text"><br/> - Dirigez vous alors sur GitLab pour faire fusionner la branche Dev à la branche master sans la supprimer (la façon la plus simple selon moi). Dans "Branches" vous retrouverez les branches crées et l'option "Merge Request" sur la branche Dev qui vous permet de fusionner les changements.</p>
+			<img id="sc16" src="../screenshot/sc16.png">
+			<p class="simple-text">P.S. : Enlevez l'option de supression de branche elle est plus gênante qu'autre chose.</p> 
+			<p class="simple-text"><br/> - Merge la branche Dev a la Master.</p>
+			<img id="sc17" src="../screenshot/sc17.png">
+			<h2 style="text-align: center; font-size: 50px;"><br/>Félicitation, vous venez de réussir l'introduction à Git. Pour aller plus loin je vous laisse feuilleter le net.</h2>
+		</div>
+	</main>
+</html>

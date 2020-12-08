@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<Title>GitHelp !</Title>
+		<meta charset="utf-8"/>
+		<link href="../css/reset.css" rel="stylesheet">
+		<link href="../css/style.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	</head>
+	
+	<header>
+		<nav>
+			<ul>
+				<li><a href="main.html">Acceuil</a></li><!--
+				--><li><a href="Installation.html">Installation</a></li><!--
+				--><li><a href="Introduction.html">Introduction à Git</a></li><!--
+				--><li><a href="Lexique.html">Lexique</a></li><!--
+				--><li><a href="vscode.html">Pour VScode</a></li><!--
+				--><li><a href="Elus.html">Les Elus</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="page-header">
+		<a href="http://www.cstb.fr/fr" target="_blank">
+			<img id="cstb" src="../logo/CSTB_logo.png" alt="CSTB">
+		</a>
+		<a href="https://scm.cstb.fr" target="_blank">
+			<img id="gitlab" src="../logo/GitLab_logo.png" alt="GitLab" style="Width:10%">
+		</a>
+		<h1>GitHelp !</h1>
+	</div>
+
+	<main>
+		<div>
+			<h2><br/>Lexique</h2>
+			<p class="simple-text"><b><i>Master</b></i> = Suite d'étapes du projet initial.<br/></p>
+			<p class="simple-text"><b><i>Branch</b></i> = Génère une branche dans la suite d'épate du projet qui vous est destiné afin d'isoler son travail des autres collaborateurs.<br/></p>
+			<p class="simple-text"><b><i>Clone</b></i> = Télécharge tous les fichiers sources.<br/></p>
+			<p class="simple-text"><b><i>Commit</b></i> = Enregistre nos modifications dans le repository local, décrit les changement opérer sur le projet ou une partie. <br/></p>
+			<p class="simple-text"><b><i>Repository(Repo)</b></i> = Dossier qui contient tous les fichiers source et évolue en fonction des modifications apportés au projet.<br/></p>
+			<p class="simple-text"><b><i>Index</b></i> = Zone d'assemblage entre votre répertoire de travail et votre dépôt.</p>
+			<p class="simple-text"><b><i>Pull</b></i> = Mets à jour la version locale du code avec les dernières modifications mises en ligne.<br/></p>
+			<p class="simple-text"><b><i>Push</b></i> = Mets à jour la version online du code avec vos modifications.<br/></p>
+			<h2><br/>Commandes Principales/Généralistes de première approche.</h2>
+			<p class="simple-text"><b><i>git</b></i> = Fait appel à l'appliaction Git.<br/></p>
+			<p class="simple-text"><b><i>git init</b></i> = Initialise un dossier comme étant destiné au projet en question.<br/></p>
+			<p class="simple-text"><b><i>git config --global user.name "Nom Prénom".</b></i><br/></p>
+			<p class="simple-text"><b><i>git config --global user.email "prénom.nom@cstb.fr".</b></i><br/></p>
+			<p class="simple-text" style="text-indent:50px;">Ces deux lignes de commandes permettent ainsi de configurer votre identité qui est essentiel car toutes les validations dans Git utilisent ces informations.<br/></p>
+			<p class="simple-text"><b><i>git clone "URL"</b></i> = Permet de cloner un git déjà créer sur la plateforme.<br/></p>
+			<p class="simple-text"><b><i>git status</b></i> = Montre les fichiers modifié précedemment modifié et à ajouter au commit.<br/></p>
+			<p class="simple-text"><b><i>git add "chemin du dossier/fichier en question"</b></i> = Associe les fichiers en question au Git travaillé. Afin qu'il soit pris en compte lors de l'envoi sur la plateforme.<br/></p>
+			<p class="simple-text"><b><i>git commit</b></i> = Modifie la description du dossier ou ficher modifier sur la plateforme dans l'onglet repository.<br/></p>
+			<p class="simple-text"><b><i>git push "URL"</b></i> = Envoie sur la plateforme les modifications effectuer du projet.<br/></p>
+			<P class="simple-text"><b><i>git pull "URL"</b></i> = Récupère la dernière version du projet à jour.<br/></p>
+			<p class="simple-text"><b><i>git branch "Nom de la branche"</b></i> = Créer une version indépendante du projet pour vous seul afin de tester vos propres idée sur le projet sans en incomber les autres collaborateurs. Il est ensuite possible de fusionner au projet inital cette même branche par l'intermédiaire de :<br/></p>
+			<p class="simple-text"><b><i>git merge "Nom de la branche indépendante"</b></i>.<br/</p>
+			<p><br/>P.S. : Il est possible de tout rédiger par l'intermédiaire du site GitLab. Mais cela rends le travail impossible à réaliser sans accès internet.</p>
+		</div>
+	</main>
+</html>
