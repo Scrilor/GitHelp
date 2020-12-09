@@ -31,12 +31,12 @@
 			<h2>Pour VScode</h2>
 			<p class="simple-text"><br/> - Ouvrez un terminal.</p>
 			<img id="sc18" src="../screenshot/sc18.png">
-			<p class="simple-text"><br/> - Initiez un Dossier en tant que repository Git.</p>
-			<img id="sc19" src="../screenshot/sc19.png">
 			<p class="simple-text"><br/> - Identifiez-vous :</p>
 			<img id="sc20" src="../screenshot/sc20.png">
-			<p class="simple-text"><br/> - Clonez le repo en question en utilisant votre Access Token.</p>
+			<p class="simple-text"><br/> - Clonez le repo en question en utilisant votre Access Token : <br/><b><i>git clone https://oauth2:ACCESS_TOKEN@scm.cstb.fr/cape/repository.git</i></b></p>
 			<img id="sc21" src="../screenshot/sc21.png">
+			<p class="simple-text"><br/> - Initiez le Dossier en tant que repository Git.</p>
+			<img id="sc19" src="../screenshot/sc19.png">
 			<p class="simple-text"><br/> - Changez de branche !!!</p>
 			<img id="sc22" src="../screenshot/sc22.png">
 			<p class="simple-text"><br/> - Effectuez vos modifications.</p>
@@ -48,6 +48,29 @@
 			<a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens" target="_blank">
 				<img id="gitlens" src="../logo/gitlens-logo.png" alt="GitLens">
 			</a>
-        </div>
+			<h2><br/>Créer et utiliser une clé SSH</h2>
+			<p class="simple-text"><br/> - Rendez-vous dans un Terminal VSCode et tapez la commande suivante :</p>
+			<img id="sc25" src="../screenshot/sc25.png">
+			<p class="simple-text" style="margin-left: 5%;"><b><i>ssh-keygen -t rsa -C "prénom.nom@cstb.fr" -f "Nom_du_fichier"</i></b></p>
+			<p class="simple-text"><br/> - Suite à cela deux nouveaux fichier ont été créé, un premier : "Nom_du_fichier" et un second "Nom_du_fichier.pub". C'est le second (.pub) que nous allons utiliser du côté de GitLab. Pour cela copiez le contenu et collez-le dans les paramètres de clés SSH.</p>
+			<p class="simple-text"><br/> - Il ne reste plus qu'à modifier le fichier de configuration suivant : <b><i>~/.ssh/config</i></b></p>
+			<img id="sc26" src="../screenshot/sc26.png">
+			<p class="simple-text"><br/><b><i>Host scm.cstb.fr</i></b></p>
+			<p class="simple-text" style="margin-left: 5%;"><b><i>Hostname scm.cstb.fr<br/>User git<br/>IdentityFile  ~/Chemin complet du fichier (sans le .pub)<br/></i></b></p>
+			<h2><br/>Dans le cas d'un besoin de double compte : compte GitHub(Perso) et GitLab(Pro)</h2>
+			<p class="simple-text"><br/> - Le but est de modifier la configuration générale de Git afin de définir un répertoire isolée de la configuration Globale. Pour ce faire modifiez le fichier : <b><i>~/.gitconfig</i></b></p>
+			<img id="sc27" src="../screenshot/sc27.png">
+			<p class="simple-text"><br/><b><i>[user]<br/></p>
+			<p class="simple-text" style="margin-left: 5%;">name = NOM Prénom<br/>email = prenom.nom@cstb.fr</p>
+			<p class="simple-text">[includeIf "gitdir:~/Chemin_du_dossier_des_gits_perso"]</p>
+			<p class="simple-text" style="margin-left: 5%;">path = ~/Chemin d'un second .gitconfig se situant dans le dossier des Gits perso.</i></b></p>
+			<p class="simple-text"> - Créez et modifiez le fichier .gitconfig destinée au dossier perso, à la manière du premier en utilisant uniquement la partie "user" en changent les identifiants selon votre compte perso.</p>
+			<img id="sc28" src="../screenshot/sc28.png">
+			<p class="simple-text"> - Si vous cherchez à utilisez votre compte avec une clé SSH, créez une nouvelle clé comme fait précedemment et remodifiez le fichier : <b><i>~/.ssh/config</i></b><br/></p>
+			<img id="sc29" src="../screenshot/sc29.png">
+			<p class="simple-text"> - En y ajoutant :</p>
+			<p class="simple-text"><b><i>Host github.com</i></b></p>
+			<p class="simple-text" style="margin-left: 5%;"><b><i>Hostname github.com<br/>User git<br/>IdentityFile  ~/Chemin complet du fichier perso (sans le .pub)<br/></i></b></p>
+		</div>
     </main>
 </html>

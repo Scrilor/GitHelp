@@ -82,7 +82,7 @@ h2{
 }
 .simple-text{
 	float : none;
-	font-family : 'Calibri', sans-serif;
+	font-family : 'Roboto';
 	font-size : 120%;
 }
 
@@ -216,6 +216,29 @@ h2{
 }
 #sc24{
 	margin-left: 5%;
+}
+#sc25{
+	margin-left: 5%;
+	width: 60%;
+}
+#sc26{
+	width: 50%;
+	margin-left: 5%;
+}
+#sc27{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+#sc28{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+#sc29{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 #ifeelinsane{
 	margin-top: 5%;
